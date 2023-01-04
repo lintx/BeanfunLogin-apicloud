@@ -5,6 +5,9 @@
         </view>
         <view class="body">
             <view class="login-view" v-show="!islogin">
+                <view class="tips">
+                    <text>不要安装其他人发给你的apk等防止用心不良者盗号！！！</text>
+                </view>
                 <input placeholder="beanfun帐号" class="input" v-model="logindata.username" />
                 <input placeholder="beanfun密码" type="password" class="input" v-model="logindata.password" />
                 <view class="input switch-view">
@@ -529,5 +532,9 @@ export default {
     border-color: #333;
     border-width: 1px;
     border-style: solid;
+}
+.tips{
+    margin: 8px auto 0;
+    width: 80%;
 }
 </style>
